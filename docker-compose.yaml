@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  fastapi:
+    env_file: .env
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      KEY: ${KEY}
+      SECRET: ${SECRET}
